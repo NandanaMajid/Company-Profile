@@ -138,6 +138,9 @@ section {
 
 .home-img img {
   width: 32vw;
+  height: 32vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -462,6 +465,7 @@ section {
 @media (max-width: 1285px) {
   #menu-icon {
     display: block;
+    cursor: pointer;
   }
   .navbar {
     position: absolute;
@@ -482,6 +486,7 @@ section {
   }
   .navbar.active {
     display: block;
+    right: 0;
   }
   .gradient-btn {
     display: none;
@@ -513,3 +518,4 @@ section {
     flex-direction: column;
   }
 }
+
